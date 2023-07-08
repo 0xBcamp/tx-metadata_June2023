@@ -18,7 +18,6 @@ Blockchain explorers, such as Etherscan, offer functionality to label addresses.
 
 ```txt
 tx-metadata
-├── Makefile
 ├── broadcast
 ├── contract
 ├── foundry.toml
@@ -27,4 +26,17 @@ tx-metadata
 ├── remappings.txt
 ├── script
 └── test
+```
+
+**Frontend**
+
+```txt
+tx-metadata
+├── index.html
+├── package.json
+├── pnpm-lock.yaml
+├── src
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
 ```
