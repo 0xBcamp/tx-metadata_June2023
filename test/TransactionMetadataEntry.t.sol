@@ -2,13 +2,13 @@
 pragma solidity ^0.8.16;
 
 import "forge-std/Test.sol";
-import "../lib/openzeppelin-contracts/contracts/utils/introspection/IERC1820Registry.sol";
-import "../lib/multicall/src/interfaces/IMulticall3.sol";
+import "openzeppelin/utils/introspection/IERC1820Registry.sol";
+import "multicall/interfaces/IMulticall3.sol";
 
-import "../src/Constants.sol";
-import "../src/TransactionMetadataEntry.sol";
-import "../src/mocks/MockHandler.sol";
-import "../src/mocks/MockCallee.sol";
+import "../contract/Constants.sol";
+import "../contract/TransactionMetadataEntry.sol";
+import "../contract/mocks/MockHandler.sol";
+import "../contract/mocks/MockCallee.sol";
 
 contract TestTransactionMetadataEntry is Test {
     IERC1820Registry _erc1820register = IERC1820Registry(ADDR_ERC1820_REGISTRY);
