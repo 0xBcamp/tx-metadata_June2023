@@ -5,6 +5,9 @@ import "solmate/utils/SSTORE2.sol";
 import "../Constants.sol";
 import "../interfaces/IMetadataHandler.sol";
 
+/// @title Storage2
+/// @author wiasliaw
+/// @dev use SSTORE2 to store data onchain
 contract Storage2 is IMetadataHandler {
     event Recorded(address indexed pointer);
 
