@@ -15,6 +15,10 @@ contract TransactionMetadataEntry {
 
     IMulticall3 public constant MULTICALL3 = IMulticall3(ADDR_MULTICALL3);
 
+    /// @notice execute transactions with metadata
+    /// @param _txs Call3[] transactions with value to execute
+    /// @param _metadata bytes about metadata
+    /// @return ret IMulticall3.Result[] results of executed transactions
     function txmExecute(
         IMulticall3.Call3[] calldata _txs,
         bytes calldata _metadata
@@ -32,6 +36,10 @@ contract TransactionMetadataEntry {
         ret = MULTICALL3.aggregate3(_txs);
     }
 
+    /// @notice execute transactions with metadata
+    /// @param _txs Call3Value[] transactions with value to execute
+    /// @param _metadata bytes about metadata
+    /// @return ret IMulticall3.Result[] results of executed transactions
     function txmExecuteWithValue(
         IMulticall3.Call3Value[] calldata _txs,
         bytes calldata _metadata

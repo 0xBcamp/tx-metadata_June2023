@@ -2,8 +2,8 @@
 pragma solidity ^0.8.16;
 
 import "forge-std/Script.sol";
-import "../src/TransactionMetadataEntry.sol";
-import "../src/mocks/MockHandler.sol";
+import "../contract/TransactionMetadataEntry.sol";
+import "../contract/mocks/MockHandler.sol";
 
 contract Deployment is Script {
     function run() external {
